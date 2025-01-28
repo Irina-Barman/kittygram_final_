@@ -56,3 +56,17 @@ docker exec -it db_kittygram psql -U django_user -d kittygram
 
 # Строим образ Docker с тегом kittygram_backend из текущего контекста (Dockerfile должен находиться в текущей директории)
 docker build -t kittygram_backend .
+
+
+
+ ✔ Service backend                            Built                                                                                                                                                                                                                4.7s 
+ ✔ Service gateway                            Built                                                                                                                                                                                                                3.6s 
+ ✔ Service frontend                           Built                                                                                                                                                                                                              102.7s 
+ ✔ Network kittygram_final_default            Created                                                                                                                                                                                                              0.2s 
+ ✔ Volume "kittygram_final_pgdata"            Created                                                                                                                                                                                                              0.0s 
+ ✔ Volume "kittygram_final_static_kittygram"  Created                                                                                                                                                                                                              0.0s 
+ ✔ Volume "kittygram_final_media_kittygram"   Created                                                                                                                                                                                                              0.0s 
+ ✔ Container kittygram_final-db_kittygram-1   Created                                                                                                                                                                                                              8.1s 
+ ✔ Container kittygram_final-backend-1        Created                                                                                                                                                                                                              0.5s 
+ ✔ Container kittygram_final-frontend-1       Created                                                                                                                                                                                                              0.6s 
+ ✔ Container kittygram_final-gateway-1        Created 
